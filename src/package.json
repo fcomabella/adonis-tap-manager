@@ -1,5 +1,5 @@
 {
-  "name": "adonis-app",
+  "name": "adonis-tap-manager",
   "version": "3.2.0",
   "main": "server.js",
   "scripts": {
