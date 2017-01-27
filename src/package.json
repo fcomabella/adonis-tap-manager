@@ -1,0 +1,50 @@
+{
+  "name": "adonis-app",
+  "version": "3.2.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node server.js",
+    "start": "node server.js",
+    "pretest": "ENV_PATH=.env.test ./ace migration:refresh",
+    "test": "nodemon --watch app/Http/Controllers --watch app/Model --watch test --watch .env.test -x node bin/test.js",
+    "lint": "standard"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "adonis-ace": "^3.0.5",
+    "adonis-antl": "^1.0.5",
+    "adonis-auth": "^1.0.5",
+    "adonis-commands": "^2.1.3",
+    "adonis-fold": "^3.0.3",
+    "adonis-framework": "^3.0.7",
+    "adonis-lucid": "^3.0.12",
+    "adonis-middleware": "^1.0.10",
+    "adonis-validation-provider": "^3.0.5",
+    "adonis-websocket": "^1.0.2",
+    "mysql": "^2.12.0",
+    "sqlite3": "^3.1.8",
+    "standard": "^8.6.0",
+    "youch": "^1.0.1"
+  },
+  "standard": {
+    "global": [
+      "use",
+      "make"
+    ]
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "co": "^4.6.0",
+    "co-mocha": "^1.1.3",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "standard": "^8.6.0",
+    "supertest": "^2.0.1"
+  }
+}

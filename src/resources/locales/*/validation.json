@@ -1,0 +1,5 @@
+{
+    "unique": "The {field} value already exists.",
+    "required": "You must provide a value for field {field}",
+    "positiveInteger":"The {field} value must be a positive integer number"
+}
