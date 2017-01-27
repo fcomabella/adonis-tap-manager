@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "node"
+git:
+  depth: 3
+services:
+  - mysql
+before_script:
+  mysql -e "create database IF NOT EXISTS tap-manager-test;" -uroot;

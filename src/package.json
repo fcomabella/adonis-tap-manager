@@ -6,7 +6,8 @@
     "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node server.js",
     "start": "node server.js",
     "pretest": "ENV_PATH=.env.test ./ace migration:refresh",
-    "test": "nodemon --watch app/Http/Controllers --watch app/Model --watch test --watch .env.test -x node bin/test.js",
+    "dev-test": "nodemon --watch app/Http/Controllers --watch app/Model --watch test --watch .env.test -x node bin/test.js",
+    "test": "node bin/test.js",
     "lint": "standard"
   },
   "author": "",
