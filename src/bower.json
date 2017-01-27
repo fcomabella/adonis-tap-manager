@@ -17,6 +17,11 @@
   ],
   "dependencies": {
     "angular": "^1.6.1",
+    "requirejs": "^2.3.2",
+    "angularAMD": "^0.2.1"
+  },
+  "resolutions": {
+    "angular": "^1.6.1",
     "requirejs": "^2.3.2"
   }
 }
